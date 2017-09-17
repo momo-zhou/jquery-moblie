@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="https://cdn.bootcss.com/jquery-mobile/1.4.2/jquery.mobile.css" rel="stylesheet">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <style>
+        .ui-grid-a{
+                     text-align: center;
+                     height: 40px;
+                     line-height: 40px;
+                     border-top: 1px solid #c3c3c3;
+                     background-color: rgba(33, 22, 55, 0.94);
+                 }
+        .ui-block-a{
+            background-color: dodgerblue;
+        }
+        .ui-radio .ui-btn{
+            border-radius: 20px;
+        }
+
+
+        .ui-bar-a, .ui-page-theme-a .ui-bar-inherit{
+            background-color: #3431c6;
+            color: white;
+        }
+        .ui-header .ui-title{
+            font-weight: 500;
+        }
+        .title{
+            color: #005aa0;
+        }
+        #btn-warming,#btn-info{
+            width: 100px;
+            height: 50px;
+            border-radius: 20px;
+        }
+        #btn-warming{
+            background-color: #d1d100;
+        }
+        #btn-info{
+            background-color: #1760ae;
+            color: white;
+            font-weight: 300;
+            float: right;
+        }
+    </style>
+</head>
+<body>
+     <div data-role="page">
+         <div data-role="header" data-theme="b">
+             <a href="" data-icon="back">返回</a>
+             <h3>欢迎访问我的主页</h3>
+              <div class="ui-grid-a">
+                  <div class="ui-block-a">首页</div>
+                  <div class="ui-block-b"><a href="#page2" style="color: white">页面二</a></div>
+              </div>
+         </div>
+         <div data-role="content">
+             性别：
+             <label for="man">男
+             <input type="radio" name="sex" id="man"/></label>
+             <label for="women">女
+             <input type="radio" name="sex" id="women"/></label>
+
+             <form >
+             生日：
+             <input type="text" placeholder="年-月-日"/>
+             手机号码：
+             <input type="text" placeholder="您的手机号码"/>
+             电子邮箱：
+             <input type="text" placeholder="您的电子邮箱"/>
+                 <hr/>
+                 <input type="submit" data-inline="true" value="提交">
+             </form>
+
+         </div>
+
+         <div data-role="footer"data-theme="b">
+             <h3>页脚文本</h3>
+         </div>
+     </div>
+
+
+
+  <div data-role="page" id="page2">
+      <div data-role="header">
+          <h3>开始笔记之旅</h3>
+      </div>
+      <div data-role="content">
+          <h2 class="title">登录微笔记</h2>
+
+          <form action="">
+              <input type="text" placeholder="用户名"/>
+              <input type="password" />
+              <label for="check">保持登录状态
+              <input type="checkbox" id="check"/></label>
+              <button data-inline="true" id="btn-warming">注册</button>
+              <button data-inline="true" id="btn-info">登录</button>
+          </form>
+      </div>
+      <div data-role="footer" data-theme="b">
+          <h3>2011 TinyNote 微...</h3>
+      </div>
+  </div>
+
+
+</body>
+<script src="https://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/jquery-mobile/1.4.2/jquery.mobile.min.js"></script>
+</html>

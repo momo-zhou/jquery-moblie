@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="https://cdn.bootcss.com/jquery-mobile/1.4.2/jquery.mobile.css" rel="stylesheet">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <style>
+       #btn-success{
+           background-color: #006600;
+           color: white;
+           font-weight: 300;
+       }
+        .ui-grid-a{
+            text-align: center;
+        }
+        #li{
+            text-align: center;
+        }
+        #inp{
+            height: 70px;
+        }
+    </style>
+</head>
+<body>
+   <div data-role="page">
+       <div data-role="header" data-theme="b">
+           <h3>购物车</h3>
+           <a href=""data-icon="home">注销</a>
+       </div>
+       <div data-role="content">
+           <ul data-role="listview"data-inset="true">
+               <li>
+                   <a href=""><img src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3566042460,2090077493&fm=27&gp=0.jpg" alt=""/>
+                   <span style="color: red">40.0</span>
+                   <p>数量：1</p></a>
+                   <a href=""data-rel="dialog" data-icon="delete"></a>
+               </li>
+           </ul>
+           <ul data-role="listview" data-inset="true">
+               <li id="li">
+                   <div class="ui-grid-a">
+                       <div class="ui-block-a">商品总价</div>
+                       <div class="ui-block-b">40.0元</div>
+                   </div>
+                   <h4>客户名称</h4>
+                   <input type="text" placeholder="刘国华"/>
+                   <h4>收货地址</h4>
+                   <input type="text" placeholder="上海市" id="inp"/>
+               </li>
+               <li>
+                   <button id="btn-success">生成订单</button>
+               </li>
+           </ul>
+       </div>
+       <div data-role="footer" data-position="fixed" data-theme="b">
+           <div data-role="navbar">
+               <ul>
+                   <li><a href="">首页</a></li>
+                   <li><a href="">购物车</a></li>
+                   <li><a href="" style="background-color: #006600;">订单</a></li>
+                   <li><a href="">搜索</a></li>
+               </ul>
+           </div>
+       </div>
+   </div>
+</body>
+<script src="https://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/jquery-mobile/1.4.2/jquery.mobile.min.js"></script>
+</html>
